@@ -17,14 +17,8 @@ return {
                         prompt_position = "top",
                     },
                 },
-    	})
-            local builtin = require('telescope.builtin')
-    	vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-    	vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
-    	vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-    	vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-        vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', { noremap = true })
-	require("telescope").load_extension("file_browser")
+    	    })
+	    require("telescope").load_extension("file_browser")
         end
     },
 }
