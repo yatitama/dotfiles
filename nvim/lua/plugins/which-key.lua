@@ -28,6 +28,16 @@ return {
 		    h = { telescope.help_tags, 'Help' },
 		    t = { telescope.treesitter, 'Treesitter' },
 		    e = { ':Telescope file_browser path=%:p:h select_buffer=true<CR>', 'Explorer' },
+		},
+		o = {
+		    name = 'Obsidian',
+		    n = { ':ObsidianNew', 'New file' },
+		    p = { ':ObsidianQuickSwitch<CR>', 'Find file' },
+		    f = { ':ObsidianFollowLink<CR>', 'Follow link' },
+		    b = { ':ObsidianBacklinks<CR>', 'Back link' },
+		    t = { ':ObsidianToday<CR>', 'Today file' },
+		    g = { ':ObsidianSearch<CR>', 'Grep' },
+		    l = { ':ObsidianLinkNew<CR>', 'Link new' },
 		}
 	    },
             {
