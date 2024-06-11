@@ -1,0 +1,40 @@
+format = """
+$hostname\
+[](fg:#06364B bg:#fd5e3a)\
+$directory\
+[](fg:#fd5e3a bg:#35b5ff)\
+$time\
+[](fg:#35b5ff bg:#06101e)\
+"""
+
+right_format = """
+$git_branch\
+$git_status\
+"""
+
+[hostname]
+ssh_only = false
+disabled = false
+style = "bg:#06364B"
+format = "[ $hostname ]($style)"
+
+[directory]
+style = "bg:#fd5e3a"
+format = "[  $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#35b5ff"
+format = '[  $time ]($style)'
+
+[git_branch]
+symbol = ""
+style = "fg:#06101e bg:#e8e5b5"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#06101e bg:#e8e5b5"
+format = '[$all_status$ahead_behind ]($style)'
